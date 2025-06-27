@@ -7,6 +7,7 @@
   <title>Paras Natekar | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   
@@ -21,17 +22,19 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm Paras Natekar</h1>
-      <p>Aspiring Web Developer | Designer | Learner</p>
-      <a href="#projects" class="btn">See My Work</a>
-    </div>
-  </section>
+<section id="hero" data-aos="fade-up">
+  <div class="hero-content">
+    <h1 data-aos="fade-down" data-aos-delay="100">Hi, I'm Paras Natekar</h1>
+    <p data-aos="fade-right" data-aos-delay="200">Aspiring Web Developer | Designer | Learner</p>
+    <a href="#projects" class="btn" data-aos="zoom-in" data-aos-delay="300">See My Work</a>
+  </div>
+</section>
+
 <!-- Contact Section -->
 <section id="contact" class="contact-section">
   <div class="contact-container">
@@ -58,29 +61,38 @@
     </div>
   </div>
 </footer>
-
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+  });
+AOS.init();
+</script>
 </body>
 </html>
 
 
 <!-- About Section -->
-<section id="about" class="about-section">
-    <div class="about-container">
-      <div class="about-image">
-       <img src="assets/images/paras.jpg" alt="Paras Natekar Photo" />
-      </div>
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          I'm Paras Natekar, an aspiring web developer passionate about creating beautiful and functional websites. I'm currently focused on learning modern web technologies like HTML, CSS, JavaScript, and frameworks like React.
-        </p>
-        <p>
-          Apart from coding, I enjoy exploring design trends, reading tech blogs, and contributing to open-source. I'm always excited to learn and take on new challenges!
-        </p>
-        <a href="assets/Paras_Resume.pdf" class="btn" download>Download Resume</a>
-      </div>
+<section id="about" class="about-section" data-aos="fade-up">
+  <div class="about-container">
+    <div class="about-image" data-aos="zoom-in">
+      <img src="assets/images/paras.jpg" alt="Paras Natekar Photo" />
     </div>
-  </section>
+    <div class="about-text" data-aos="fade-left" data-aos-delay="150">
+      <h2>About Me</h2>
+      <p>
+          I'm Paras Natekar, an aspiring web developer passionate about creating beautiful and functional websites. I'm currently focused on learning modern web technologies like HTML, CSS, JavaScript, and frameworks like React.
+      </p>
+      <p>
+          Apart from coding, I enjoy exploring design trends, reading tech blogs, and contributing to open-source. I'm always excited to learn and take on new challenges!
+      </p>
+      <a href="assets/Paras_Resume.pdf" class="btn" download data-aos="zoom-in" data-aos-delay="300">Download Resume</a>
+    </div>
+  </div>
+</section>
+
   
   <!-- Skills Section -->
 <section id="skills" class="skills-section">
@@ -105,12 +117,14 @@
 
 
 <!-- Projects Section -->
-<section id="projects" class="projects-section">
+<!-- Projects Section -->
+<section id="projects" class="projects-section" data-aos="fade-up">
   <div class="projects-container">
-    <h2>Projects</h2>
+    <h2 data-aos="fade-down">Projects</h2>
     <div class="projects-grid">
+      
       <!-- Project 1 -->
-      <div class="project-card">
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
         <img src="assets/images/project1.jpg" alt="Placeholder Project">
         <div class="project-info">
           <h3>Student Result Management</h3>
@@ -119,9 +133,8 @@
         </div>
       </div>
 
-
       <!-- Project 2 -->
-      <div class="project-card">
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
         <img src="assets/images/project2.png" alt="Chat Server Project">
         <div class="project-info">
           <h3>Python Chat Server</h3>
@@ -131,7 +144,7 @@
       </div>
 
       <!-- Project 3 -->
-      <div class="project-card">
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
         <img src="assets/images/project3" alt="Weather App Project">
         <div class="project-info">
           <h3>Weather App</h3>
@@ -141,7 +154,7 @@
       </div>
 
       <!-- Project 4 -->
-      <div class="project-card">
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
         <img src="assets/images/project4.png" alt="YouTube Clone Project">
         <div class="project-info">
           <h3>YouTube UI Clone</h3>
@@ -153,5 +166,6 @@
     </div>
   </div>
 </section>
+
 
   
