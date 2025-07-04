@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +9,10 @@
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
   <!-- Navigation -->
   <header>
     <nav class="navbar">
@@ -22,150 +24,147 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    <button id="theme-toggle" class="theme-toggle">🌙</button>
+      <button id="theme-toggle" class="theme-toggle">🌙</button>
     </nav>
   </header>
 
   <!-- Hero Section -->
-<section id="hero" data-aos="fade-up">
-  <div class="hero-content">
-    <h1 data-aos="fade-down" data-aos-delay="100">Hi, I'm Paras Natekar</h1>
-    <p data-aos="fade-right" data-aos-delay="200">Aspiring Web Developer | Designer | Learner</p>
-    <a href="#projects" class="btn" data-aos="zoom-in" data-aos-delay="300">See My Work</a>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="contact-section">
-  <div class="contact-container">
-    <h2>Contact Me</h2>
-    <p>Have a question or want to work together? Drop me a message!</p>
-    
-    <form action="https://formspree.io/f/xnnvlndg" method="POST" class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer>
-  <div class="footer-content">
-    <p>&copy; 2025 Paras Natekar. All rights reserved.</p>
-    <div class="social-icons">
-      <a href="https://github.com/parasnatekar" target="_blank">GitHub</a>|
-      <a href="https://www.linkedin.com/in/paras-natekar-72a0ab2a7" target="_blank">LinkedIn</a>|
-      <a href="mailto:paraspnatekar@gmail.com">Email</a>
+  <section id="hero" data-aos="fade-up">
+    <div class="hero-content">
+      <h1 data-aos="fade-down" data-aos-delay="100">Hi, I'm Paras Natekar</h1>
+      <p data-aos="fade-right" data-aos-delay="200">Aspiring Web Developer | Designer | Learner</p>
+      <a href="#projects" class="btn" data-aos="zoom-in" data-aos-delay="300">See My Work</a>
     </div>
-  </div>
-</footer>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  const toggleBtn = document.getElementById('theme-toggle');
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-  });
-AOS.init();
-</script>
-</body>
-</html>
-
+  </section>
 
 <!-- About Section -->
 <section id="about" class="about-section" data-aos="fade-up">
   <div class="about-container">
-    <div class="about-image" data-aos="zoom-in">
+    <div class="about-image" data-aos="zoom-in" data-aos-duration="00">
       <img src="assets/images/paras.jpg" alt="Paras Natekar Photo" />
     </div>
-    <div class="about-text" data-aos="fade-left" data-aos-delay="150">
+    <div class="about-text" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
       <h2>About Me</h2>
       <p>
-          I'm Paras Natekar, an aspiring web developer passionate about creating beautiful and functional websites. I'm currently focused on learning modern web technologies like HTML, CSS, JavaScript, and frameworks like React.
+        I'm Paras Natekar, an aspiring web developer passionate about creating beautiful and functional websites. I'm currently focused on learning modern web technologies like HTML, CSS, JavaScript, and frameworks like React.
       </p>
       <p>
-          Apart from coding, I enjoy exploring design trends, reading tech blogs, and contributing to open-source. I'm always excited to learn and take on new challenges!
+        Apart from coding, I enjoy exploring design trends, reading tech blogs, and contributing to open-source. I'm always excited to learn and take on new challenges!
       </p>
       <a href="assets/Paras_Resume.pdf" class="btn" download data-aos="zoom-in" data-aos-delay="300">Download Resume</a>
     </div>
   </div>
 </section>
 
-  
+
   <!-- Skills Section -->
-<section id="skills" class="skills-section">
-  <div class="skills-container">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <span class="skill-chip">HTML</span>
-      <span class="skill-chip">CSS</span>
-      <span class="skill-chip">JavaScript</span>
-      <span class="skill-chip">React</span>
-      <span class="skill-chip">Bootstrap</span>
-      <span class="skill-chip">Git & GitHub</span>
-      <span class="skill-chip">Figma</span>
-      <span class="skill-chip">Node.js</span>
-      <span class="skill-chip">Firebase</span>
-      <span class="skill-chip">MongoDB</span>
-      <span class="skill-chip">C/C++</span>
-      <span class="skill-chip">Python</span>
+  <section id="skills" class="skills-section">
+    <div class="skills-container">
+      <h2 data-aos="fade-up" data-aos-duration="800">Skills</h2>
+<div class="skills-grid" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+        <span class="skill-chip" data-aos="zoom-in" data-aos-delay="100">HTML</span>
+        <span class="skill-chip" data-aos="zoom-in" data-aos-delay="150">CSS</span>
+        <span class="skill-chip" data-aos="zoom-in" data-aos-delay="200">Javascript</span>
+        <span class="skill-chip" data-aos="zoom-in" data-aos-delay="250">React</span>
+        <span class="skill-chip" data-aos="zoom-in" data-aos-delay="300">Bootstrap</span>
+        <span class="skill-chip" data-aos="zoom-in" data-aos-delay="350">Git & Github</span>
+        <span class="skill-chip" data-aos="zoom-in" data-aos-delay="400">Figma</span>
+        <span class="skill-chip" data-aos="zoom-in" data-aos-delay="450">Node.js</span>
+        <span class="skill-chip" data-aos="zoom-in" data-aos-delay="500">Firebase</span>
+        <span class="skill-chip" data-aos="zoom-in" data-aos-delay="550">MongoDB</span>
+        <span class="skill-chip" data-aos="zoom-in" data-aos-delay="600">C/C++</span>
+        <span class="skill-chip" data-aos="zoom-in" data-aos-delay="650">Python</span>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section" data-aos="fade-up">
+    <div class="projects-container">
+      <h2 data-aos="fade-down">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+          <img src="assets/images/project5.jpeg" alt="Student Result Management">
+          <div class="project-info">
+            <h3>Student Result Management</h3>
+            <p>A desktop app built using Python and Tkinter to manage student records.</p>
+            <a href="https://github.com/parasnatekar/student-result-management" target="_blank">View Project</a>
+          </div>
+        </div>
 
-<!-- Projects Section -->
-<!-- Projects Section -->
-<section id="projects" class="projects-section" data-aos="fade-up">
-  <div class="projects-container">
-    <h2 data-aos="fade-down">Projects</h2>
-    <div class="projects-grid">
-      
-      <!-- Project 1 -->
-      <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
-        <img src="assets/images/project1.jpg" alt="Placeholder Project">
-        <div class="project-info">
-          <h3>Student Result Management</h3>
-          <p>A desktop app built using Python and Tkinter to manage student records.</p>
-          <a href="https://github.com/parasnatekar/chat-server.git" target="_blank">View Project</a>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/images/project3" alt="Chat Server Project">
+          <div class="project-info">
+            <h3>Python Chat Server</h3>
+            <p>A socket-based real-time chat server built in Python with GUI using Tkinter and hosted on AWS EC2.</p>
+            <a href="https://github.com/parasnatekar/chat-server" target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+          <img src="assets/images/project2.png" alt="Weather App Project">
+          <div class="project-info">
+            <h3>Weather App</h3>
+            <p>A responsive weather forecasting web app built using HTML, CSS, JavaScript, and OpenWeatherMap API.</p>
+            <a href="https://github.com/parasnatekar/weather-app" target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
+          <img src="assets/images/project1.jpg" alt="YouTube Clone Project">
+          <div class="project-info">
+            <h3>YouTube UI Clone</h3>
+            <p>A front-end clone of the YouTube homepage made using HTML, CSS, and responsive layout techniques.</p>
+            <a href="https://github.com/parasnatekar/Youtube-Clone" target="_blank">View Project</a>
+          </div>
         </div>
       </div>
-
-      <!-- Project 2 -->
-      <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-        <img src="assets/images/project2.png" alt="Chat Server Project">
-        <div class="project-info">
-          <h3>Python Chat Server</h3>
-          <p>A socket-based real-time chat server built in Python with GUI using Tkinter and hosted on AWS EC2.</p>
-          <a href="https://github.com/parasnatekar/chat-server" target="_blank">View Project</a>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
-        <img src="assets/images/project3" alt="Weather App Project">
-        <div class="project-info">
-          <h3>Weather App</h3>
-          <p>A responsive weather forecasting web app built using HTML, CSS, JavaScript, and OpenWeatherMap API.</p>
-          <a href="https://github.com/parasnatekar/weather-app" target="_blank">View Project</a>
-        </div>
-      </div>
-
-      <!-- Project 4 -->
-      <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
-        <img src="assets/images/project4.png" alt="YouTube Clone Project">
-        <div class="project-info">
-          <h3>YouTube UI Clone</h3>
-          <p>A front-end clone of the YouTube homepage made using HTML, CSS, and responsive layout techniques.</p>
-          <a href="https://github.com/parasnatekar/Youtube-Clone" target="_blank">View Project</a>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+     <h2 data-aos="fade-up" data-aos-duration="800">Contact Me</h2>
+     <form class="contact-form" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+      <p>Have a question or want to work together? Drop me a message!</p>
+      <form action="https://formspree.io/f/xnnvlndg" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-  
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Paras Natekar. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://github.com/parasnatekar" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/paras-natekar-72a0ab2a7" target="_blank">LinkedIn</a> |
+        <a href="mailto:paraspnatekar@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    });
+    AOS.init();
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      loader.style.opacity = '0';
+      loader.style.pointerEvents = 'none';
+      setTimeout(() => loader.remove(), 400);
+    });
+  </script>
+<button id="scrollToTopBtn" title="Go to top">⬆️</button>
+
+</body>
+</html>
