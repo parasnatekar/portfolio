@@ -7,6 +7,49 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    /* Navbar toggle style */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      background: #fff;
+      height: 3px;
+      margin: 5px 0;
+      width: 25px;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: flex;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #121212;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 20px 0;
+        z-index: 999;
+      }
+
+      .nav-links li {
+        margin: 15px 0;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+    }
+  </style>
 </head>
 <body>
   <div id="loader">
@@ -17,14 +60,18 @@
   <header>
     <nav class="navbar">
       <div class="logo">Paras Natekar</div>
-      <ul class="nav-links">
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <!-- Removed theme toggle button -->
     </nav>
   </header>
 
@@ -126,14 +173,12 @@
 <section id="contact" class="contact-section">
   <div class="contact-container">
     <h2 data-aos="fade-up" data-aos-duration="800">Contact Me</h2>
-    <form class="contact-form" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+    <form class="contact-form" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000" action="https://formspree.io/f/xnnvlndg" method="POST">
       <p>Have a question or want to work together? Drop me a message!</p>
-      <form action="https://formspree.io/f/xnnvlndg" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
     </form>
   </div>
 </section>
@@ -158,6 +203,13 @@
     loader.style.opacity = '0';
     loader.style.pointerEvents = 'none';
     setTimeout(() => loader.remove(), 400);
+  });
+
+  // Toggle Navbar
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
   });
 </script>
 
