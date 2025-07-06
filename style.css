@@ -28,6 +28,7 @@ p {
 
 /* === NAVBAR === */
 .navbar {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -585,4 +586,21 @@ footer {
 .certificate-thumb:hover {
   transform: scale(1.03);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.menu-toggle {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1101;
+}
+
+.menu-toggle span {
+  background: #fff; /* or use your theme yellow: #ffd369 if you prefer */
+  height: 3px;
+  margin: 5px 0;
+  width: 25px;
+  border-radius: 2px;
 }
