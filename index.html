@@ -53,6 +53,9 @@
   </style>
 </head>
 <body>
+  <div id="preloader">
+    <img src="assets/images/Paras natekar.png" alt="Loading..." class="preloader-logo">
+  </div> 
   <div id="loader">
     <div class="spinner"></div>
   </div>
@@ -60,12 +63,12 @@
   <!-- Navigation -->
   <header>
     <nav class="navbar">
-<div class="logo">
-  <a href="#home" class="logo-link">
-    <img src="assets/images/Paras natekar.png" alt="Paras Natekar Logo" class="logo-img" />
-    <span class="logo-text">Paras Natekar</span>
-  </a>
-</div>
+      <div class="logo">
+        <a href="#home" class="logo-link">
+          <img src="assets/images/Paras natekar.png" alt="Paras Natekar Logo" class="logo-img" />
+          <span class="logo-text">Paras Natekar</span>
+        </a>
+      </div>
       <div class="menu-toggle" id="menu-toggle">
         <span></span>
         <span></span>
@@ -76,193 +79,207 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-<!-- Hero Section -->
-<section class="hero">
-  <div id="particles-js"></div>
-  <div class="hero-content">
-    <h1>Hi, I'm <span class="highlight">Paras Natekar</span></h1>
-    <p>Aspiring Developer | AI Enthusiast | Tech Explorer</p>
-    <a href="#projects" class="btn">View My Work</a>
-  </div>
-</section>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div id="particles-js"></div>
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Paras Natekar</span></h1>
+      <p>Aspiring Developer | AI Enthusiast | Tech Explorer</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
 
-<!-- About Section -->
-<section id="about" class="about-section" data-aos="fade-up">
-  <div class="about-container">
-    <div class="about-image" data-aos="zoom-in" data-aos-duration="00">
-      <img src="assets/images/paras.jpg" alt="Paras Natekar Photo" />
-    </div>
-    <div class="about-text" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-      <h2>About Me</h2>
-      <p>
-        I'm Paras Natekar, an aspiring web developer passionate about creating beautiful and functional websites. I'm currently focused on learning modern web technologies like HTML, CSS, JavaScript, and frameworks like React.
-      </p>
-      <p>
-        Apart from coding, I enjoy exploring design trends, reading tech blogs, and contributing to open-source. I'm always excited to learn and take on new challenges!
-      </p>
-      <a href="assets/Paras_Resume.pdf" class="btn" download data-aos="zoom-in" data-aos-delay="300">Download Resume</a>
-    </div>
-  </div>
-</section>
-
-<!-- Skills Section -->
-<section class="skills-section" id="skills" data-aos="fade-up">
-  <h2 class="section-title">My Tech Stack⚙️</h2>
-  
-  <div class="skills-grid">
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
-      <span>HTML5</span>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
-      <span>CSS3</span>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-      <span>JavaScript</span>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-      <span>React</span>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-      <span>Python</span>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
-      <span>C++</span>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
-      <span>Git</span>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-      <span>GitHub</span>
-    </div>
-    <!-- Add more if you want -->
-  </div>
-</section>
-
-
-<!-- Projects Section -->
-<section id="projects" class="projects-section" data-aos="fade-up">
-  <div class="projects-container">
-    <h2 data-aos="fade-down">Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
-        <img src="assets/images/project5.jpeg" alt="Student Result Management">
-        <div class="project-info">
-          <h3>Student Result Management</h3>
-          <p>A desktop app built using Python and Tkinter to manage student records.</p>
-          <a href="https://github.com/parasnatekar/student-result-management" target="_blank">View Project</a>
-        </div>
+  <!-- About Section -->
+  <section id="about" class="about-section" data-aos="fade-up">
+    <div class="about-container">
+      <div class="about-image" data-aos="zoom-in" data-aos-duration="1000">
+        <img src="assets/images/paras.jpg" alt="Paras Natekar Photo" />
       </div>
-
-      <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-        <img src="assets/images/project4.png" alt="Chat Server Project">
-        <div class="project-info">
-          <h3>Python Chat Server</h3>
-          <p>A socket-based real-time chat server built in Python with GUI using Tkinter and hosted on AWS EC2.</p>
-          <a href="https://github.com/parasnatekar/chat-server" target="_blank">View Project</a>
-        </div>
+      <div class="about-text" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+        <h2>About Me</h2>
+        <p>
+          I'm Paras Natekar, an aspiring web developer passionate about creating beautiful and functional websites. I'm currently focused on learning modern web technologies like HTML, CSS, JavaScript, and frameworks like React.
+        </p>
+        <p>
+          Apart from coding, I enjoy exploring design trends, reading tech blogs, and contributing to open-source. I'm always excited to learn and take on new challenges!
+        </p>
+        <a href="assets/Paras_Resume.pdf" class="btn" download data-aos="zoom-in" data-aos-delay="300">Download Resume</a>
       </div>
+    </div>
+  </section>
 
-      <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
-        <img src="assets/images/project2.png" alt="Weather App Project">
-        <div class="project-info">
-          <h3>Weather App</h3>
-          <p>A responsive weather forecasting web app built using HTML, CSS, JavaScript, and OpenWeatherMap API.</p>
-          <a href="https://github.com/parasnatekar/weather-app" target="_blank">View Project</a>
+  <!-- Skills Section -->
+  <section class="skills-section" id="skills" data-aos="fade-up">
+    <h2 class="section-title">My Tech Stack⚙️</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" /><span>HTML5</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" /><span>CSS3</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" /><span>JavaScript</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" /><span>React</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" /><span>Python</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" /><span>C++</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" /><span>Git</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" /><span>GitHub</span></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section" data-aos="fade-up">
+    <div class="projects-container">
+      <h2 data-aos="fade-down">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+          <img src="assets/images/project5.jpeg" alt="Student Result Management">
+          <div class="project-info">
+            <h3>Student Result Management</h3>
+            <p>A desktop app built using Python and Tkinter to manage student records.</p>
+            <a href="https://github.com/parasnatekar/student-result-management" target="_blank">View Project</a>
+          </div>
         </div>
-      </div>
-
-      <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
-        <img src="assets/images/project1.jpg" alt="YouTube Clone Project">
-        <div class="project-info">
-          <h3>YouTube UI Clone</h3>
-          <p>A front-end clone of the YouTube homepage made using HTML, CSS, and responsive layout techniques.</p>
-          <a href="https://github.com/parasnatekar/Youtube-Clone" target="_blank">View Project</a>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/images/project4.png" alt="Chat Server Project">
+          <div class="project-info">
+            <h3>Python Chat Server</h3>
+            <p>A socket-based real-time chat server built in Python with GUI using Tkinter and hosted on AWS EC2.</p>
+            <a href="https://github.com/parasnatekar/chat-server" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+          <img src="assets/images/project2.png" alt="Weather App Project">
+          <div class="project-info">
+            <h3>Weather App</h3>
+            <p>A responsive weather forecasting web app built using HTML, CSS, JavaScript, and OpenWeatherMap API.</p>
+            <a href="https://github.com/parasnatekar/weather-app" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
+          <img src="assets/images/project1.jpg" alt="YouTube Clone Project">
+          <div class="project-info">
+            <h3>YouTube UI Clone</h3>
+            <p>A front-end clone of the YouTube homepage made using HTML, CSS, and responsive layout techniques.</p>
+            <a href="https://github.com/parasnatekar/Youtube-Clone" target="_blank">View Project</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Contact Section -->
-<!-- Contact Section -->
-<section id="contact" class="contact-section">
-  <div class="contact-container">
-    <h2 data-aos="fade-up" data-aos-duration="800">Contact Me</h2>
-    <form class="contact-form" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000" action="https://formspree.io/f/xnnvlndg" method="POST">
-      <p>Have a question or want to work together? Drop me a message!</p>
-      <div class="form-group">
-        <i class="fas fa-user"></i>
-        <input type="text" name="name" placeholder="Your Name" required />
+  <!-- Achievements Section -->
+  <section class="achievements-section" id="achievements">
+    <h2 class="section-title">🏆 Achievements & Certifications</h2>
+    <div class="achievements-grid">
+      <div class="achievement-card" data-aos="fade-up">
+        <h3>Android App Development - Kotlin & Java</h3>
+        <p>Completed 25-hour hands-on Android app development course using Kotlin and Java from Oak Academy on Udemy.</p>
+        <a href="assets/udemy certificate.pdf" target="_blank">
+          <img src="assets/images/udemy certificate_page-0001.jpg" alt="Android Certificate" class="certificate-thumb">
+        </a>
+        <span>April 2025</span>
       </div>
-      <div class="form-group">
-        <i class="fas fa-envelope"></i>
-        <input type="email" name="email" placeholder="Your Email" required />
+      <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+        <h3>Python Programming - Abdul Bari (Udemy)</h3>
+        <p>Mastered Python from beginner to advanced in a 61.5-hour course by Abdul Bari, covering all core and advanced concepts.</p>
+        <a href="assets/python certificate.pdf" target="_blank">
+          <img src="assets/images/python certificate_page-0001.jpg" alt="Python Certificate" class="certificate-thumb">
+        </a>
+        <span>June 2025</span>
       </div>
-      <div class="form-group">
-        <i class="fas fa-comment-dots"></i>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
+        <h3>AI Internship - Codec Technologies</h3>
+        <p>Completed AICTE & ICAC approved internship at Codec Technologies. Built projects like spam classifier and stock predictor.</p>
+        <a href="assets/Paras Prabhanjan Natekar  - Certificate.pdf" target="_blank">
+          <img src="assets/images/Paras Prabhanjan Natekar  - Certificate_page-0001.jpg" alt="AI Internship Certificate" class="certificate-thumb">
+        </a>
+        <span>July 2025</span>
       </div>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-
-    <div class="contact-icons" data-aos="fade-up" data-aos-delay="300">
-      <a href="https://github.com/parasnatekar" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/paras-natekar-72a0ab2a7" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:paraspnatekar@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
+        <h3>Letter of Recommendation - Codec Technologies</h3>
+        <p>Received LoR for excellent performance and dedication during internship from Codec Technologies Pvt. Ltd.</p>
+        <a href="assets/LOR- CODEC TECHNOLOGIES.pdf" target="_blank">
+          <img src="assets/images/LOR- CODEC TECHNOLOGIES_page-0001.jpg" alt="Letter of Recommendation" class="certificate-thumb">
+        </a>
+        <span>July 2025</span>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer>
-  <div class="footer-content">
-    <p>&copy; 2025 Paras Natekar. All rights reserved.</p>
-  </div>
-</footer>
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <h2 data-aos="fade-up" data-aos-duration="800">Contact Me</h2>
+      <form class="contact-form" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000" action="https://formspree.io/f/xnnvlndg" method="POST">
+        <p>Have a question or want to work together? Drop me a message!</p>
+        <div class="form-group">
+          <i class="fas fa-user"></i>
+          <input type="text" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <i class="fas fa-comment-dots"></i>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="contact-icons" data-aos="fade-up" data-aos-delay="300">
+        <a href="https://github.com/parasnatekar" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/paras-natekar-72a0ab2a7" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:paraspnatekar@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-  window.addEventListener('load', () => {
-    const loader = document.getElementById('loader');
-    loader.style.opacity = '0';
-    loader.style.pointerEvents = 'none';
-    setTimeout(() => loader.remove(), 400);
-  });
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Paras Natekar. All rights reserved.</p>
+    </div>
+  </footer>
 
-  // Toggle Navbar
-  const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.getElementById('nav-links');
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-</script>
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      loader.style.opacity = '0';
+      loader.style.pointerEvents = 'none';
+      setTimeout(() => loader.remove(), 400);
+    });
 
-<button id="scrollToTopBtn" title="Go to top">⬆️</button>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 
-<!-- Particles.js -->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script>
-  particlesJS.load('particles-js', 'particles.json', function() {
-    console.log('Particles.js loaded!');
-  });
-</script>
-<script>
-  window.scrollTo(0, 0);
-</script>
+  <button id="scrollToTopBtn" title="Go to top">⬆️</button>
 
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('Particles.js loaded!');
+    });
+  </script>
+  <script>
+    window.scrollTo(0, 0);
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      preloader.style.opacity = '0';
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 600);
+    });
+  </script>
 </body>
 </html>
